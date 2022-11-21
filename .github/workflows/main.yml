@@ -15,10 +15,10 @@ jobs:
       - run: docker-compose -f docker-compose-build.yaml build --parallel
       - run: docker tag udagram-api-feed:v2 zyzornatti/udagram-api-feed:v2
       - run: docker tag udagram-api-user:v2 zyzornatti/udagram-api-user:v2
-      - run: docker tag udagram-frontend:local zyzornatti/udagram-frontend:local
+      - run: docker tag udagram-frontend:local zyzornatti/udagram-frontend:v1
       - run: docker tag reverseproxy:latest zyzornatti/reverseproxy:latest
       - run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
       - run: docker push zyzornatti/udagram-api-feed:v2
       - run: docker push zyzornatti/udagram-api-user:v2
-      - run: docker push zyzornatti/udagram-frontend:local
+      - run: docker push zyzornatti/udagram-frontend:v1
       - run: docker push zyzornatti/reverseproxy:latest
