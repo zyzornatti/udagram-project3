@@ -2,9 +2,9 @@
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
 setx POSTGRES_USERNAME=zyzornatti
 setx POSTGRES_PASSWORD=password1
-setx POSTGRES_HOST=postgres.cx0cmhhvv9km.us-east-1.rds.amazonaws.com
+setx POSTGRES_HOST=postgres.cel7cfqep9z6.us-east-1.rds.amazonaws.com
 setx POSTGRES_DB=postgres
-setx AWS_BUCKET=myp3newbk
+setx AWS_BUCKET=my-813302259607-p3newbk
 setx AWS_REGION=us-east-1
 setx AWS_PROFILE=default
 setx JWT_SECRET=testing
